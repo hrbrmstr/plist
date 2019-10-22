@@ -2,6 +2,7 @@
 
 export(plist_to_list)
 export(plist_to_xml)
+export(read_plist)
 importFrom(Rcpp,sourceCpp)
 importFrom(XML,readKeyValueDB)
 useDynLib(plist, .registration = TRUE)

@@ -12,3 +12,19 @@ plist_to_xml(x)
 \description{
 Convert a property list to raw (unparsed) XML
 }
+\examples{
+xml <- '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>Label</key>
+<string>com.example.app</string>
+<key>Program</key>
+<string>/Users/Me/Scripts/cleanup.sh</string>
+<key>RunAtLoad</key>
+<true/>
+</dict>
+</plist>'
+
+plist_to_xml(xml)
+}

@@ -12,3 +12,19 @@ plist_to_list(x)
 \description{
 Convert a property list (binary or XML) to an R list
 }
+\examples{
+xml <- '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>Label</key>
+<string>com.example.app</string>
+<key>Program</key>
+<string>/Users/Me/Scripts/cleanup.sh</string>
+<key>RunAtLoad</key>
+<true/>
+</dict>
+</plist>'
+
+plist_to_list(xml)
+}
