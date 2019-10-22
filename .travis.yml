@@ -2,5 +2,8 @@ language: R
 sudo: false
 cache: packages
 
+apt_packages:
+  - libplist-dev
+
 after_success:
-- Rscript -e 'covr::codecov()'
+  - Rscript -e 'covr::codecov()'
