@@ -1,6 +1,6 @@
 Package: plist
 Type: Package
-Title: plist title goes here otherwise CRAN checks fail
+Title: Read and Manipulate Binary or XML Property Lists
 Version: 0.1.0
 Date: 2019-10-22
 Authors@R: c(
@@ -8,17 +8,24 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A good description goes here otherwise CRAN checks fail.
+Description: A property list is a representation of a hierarchy of objects that 
+    can be stored in the file system, memory, or databases and reconstituted later.
+    Property lists give applications a lightweight and portable way to store small
+    amounts of data. They are hierarchies of data made from specific types of 
+    objects—they are, in effect, an object graph. Tools are provided to read
+    and manipulate binary or XML property lists.
 URL: https://gitlab.com/hrbrmstr/plist
 BugReports: https://gitlab.com/hrbrmstr/plist/issues
 Encoding: UTF-8
-License: AGPL
+License: MIT + file LICENSE
 Suggests: 
     covr, tinytest
 Depends: 
     R (>= 3.2.0)
 Imports: 
-    httr,
-    jsonlite
+    XML,
+    Rcpp
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
+LinkingTo: 
+    Rcpp
