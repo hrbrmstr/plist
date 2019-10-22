@@ -25,6 +25,9 @@ to store small amounts of data. They are hierarchies of data made from
 specific types of objects—they are, in effect, an object graph. Tools
 are provided to read and manipulate binary or XML property lists.
 
+**NOTE** Requires
+[`libplist`](https://github.com/libimobiledevice/libplist).
+
 ## What’s Inside The Tin
 
 The following functions are implemented:
@@ -36,9 +39,15 @@ The following functions are implemented:
 ## Installation
 
 ``` r
+remotes::install_git("https://git.rud.is/hrbrmstr/plist.git")
+# or
 remotes::install_git("https://git.sr.ht/~hrbrmstr/plist")
 # or
 remotes::install_gitlab("hrbrmstr/plist")
+# or
+remotes::install_bitbucket("hrbrmstr/plist")
+# or
+remotes::install_github("hrbrmstr/plist")
 ```
 
 NOTE: To use the ‘remotes’ install options you will need to have the
@@ -58,10 +67,9 @@ packageVersion("plist")
 
 | Lang | \# Files |  (%) | LoC |  (%) | Blank lines |  (%) | \# Lines |  (%) |
 | :--- | -------: | ---: | --: | ---: | ----------: | ---: | -------: | ---: |
-| HTML |        1 | 0.12 | 412 | 0.87 |          89 | 0.68 |        5 | 0.08 |
-| C++  |        2 | 0.25 |  37 | 0.08 |          16 | 0.12 |        4 | 0.06 |
-| R    |        4 | 0.50 |  16 | 0.03 |          11 | 0.08 |       28 | 0.43 |
-| Rmd  |        1 | 0.12 |   8 | 0.02 |          15 | 0.11 |       28 | 0.43 |
+| C++  |        2 | 0.29 |  37 | 0.61 |          16 | 0.37 |        4 | 0.07 |
+| R    |        4 | 0.57 |  16 | 0.26 |          11 | 0.26 |       28 | 0.46 |
+| Rmd  |        1 | 0.14 |   8 | 0.13 |          16 | 0.37 |       29 | 0.48 |
 
 ## Code of Conduct
 

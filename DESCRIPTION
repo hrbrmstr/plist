@@ -15,6 +15,8 @@ Description: A property list is a representation of a hierarchy of objects that
     objects—they are, in effect, an object graph. Tools are provided to read
     and manipulate binary or XML property lists.
 URL: https://gitlab.com/hrbrmstr/plist
+SystemRequirements: https://github.com/libimobiledevice/libplist, C++11
+NeedsCompilation: yes
 BugReports: https://gitlab.com/hrbrmstr/plist/issues
 Encoding: UTF-8
 License: MIT + file LICENSE
